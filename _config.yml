@@ -25,6 +25,8 @@ github_username:  Nayan55
 disqus:
   shortname: nayan55s-jekyll-site
 
+timezone: America/Los_Angeles
+
 # Build settings
 markdown: kramdown
 theme: minima
