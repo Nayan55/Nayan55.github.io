@@ -38,6 +38,7 @@ if (isAwesome) {
 - [x] This is a completed item.
 - [ ] This is an incomplete item.
 
-** Bold **
-~~ Strikethrough ~~
+**Bold**
+~~Strikethrough~~
 *Italics*
+**_Bold & Italics_**
