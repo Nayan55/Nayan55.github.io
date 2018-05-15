@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Untitled Document</title>
+</head>
+
+<body>
+<p>This is a challenge problem that changes backgrounds between night mode and day mode.</p>
+
+<script>
+	function myFunction() {
+		document.body.style.backgroundColor = "white";
+		document.body.style.color = "black";
+	}
+	
+	function myNightFunction ( ) {
+		document.body.style.backgroundColor = "black";
+		document.body.style.color = "white";
+	}
+</script>
+
+<button type ="button" onclick="myFunction() ">Day Mode</button>
+
+<button type ="button" onclick="myNightFunction ( ) ">Night Mode</button>
+
+</body>
+</html>

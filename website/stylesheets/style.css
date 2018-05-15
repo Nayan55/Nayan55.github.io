@@ -1,0 +1,139 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/* My Color Palette
+
+Color 1: #0D74FF
+Color 2: #4AFF5A
+Color 3: #2E9CFF
+Color 4: #000000
+
+*/
+body {
+			font-family:"Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
+			color:blue;
+			background-color: lightblue;
+	}
+	#footer p {
+			text-align: right;
+	}
+	
+/* --------------------------------------------------------
+
+
+		BASIC STRUCTURE
+
+
+-------------------------------------------------------- */
+
+#wrapper  {
+		width: 960px;
+		padding: 5px;
+		margin: 20px auto;
+}
+
+#header  {
+		height: 100px;
+}
+
+#sidebar  {
+		float: left;
+		width: 300px;
+}
+
+#content  {
+		float: right;
+		width: 600px;
+}
+
+#footer  {
+		clear: both;
+}
+
+/* --------------------------------------------------------
+
+
+		COLORS AND FONTS
+
+
+-------------------------------------------------------- */
+body {
+		font-family:sans "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
+		color: blue;
+		background-color: rgba(25,166,26,1.00);
+		background-image: url("../images/background.jpg");
+		background-size: cover;
+}
+
+#header, #sidebar, #content, #footer  {
+		background-color: rgba(141,210,239,0.6);
+		margin-bottom: 4px;
+		border: double;
+		border-radius: 8px;
+		border-gray: blue;
+		padding-left: 4px;
+		padding-right: 4px;
+}
+
+/* --------------------------------------------------------
+
+		RESPONSIVE WIDTH
+		(media quer)
+
+-------------------------------------------------------- */
+@media screen and (max-width: 980 px)  {
+		#wrapper  {
+			width: 94%;
+		}
+		#content  {
+			width: 65%;
+		}
+		#sidebar  {
+			width: 30%;
+		}
+}
+@media screen and (max-width: 700px)  {
+		#content, #sidebar  {
+				width: auto;
+				float: auto;
+		}
+		#header  {
+				height: auto;
+		}
+}
+
+@media screen and (max-width: 480px)  {
+		header  {
+				height: auto;
+		}
+		h1  {
+				font-size: 24px;
+		}
+		#sidebar  {
+				float: none;
+		}
+}
+
+/* Phones */
+@media only screen
+and (min-device-width: 320px)
+and (max-device-width: 568px)  {
+		body  {
+				font-size: 40px;
+		}
+		#header  {
+				height: auto;
+		}
+		#content  {
+				width: auto;
+		}
+		#sidebar  {
+				width: auto;
+				clear: both;
+		}
+		#header, #sidebar, #content, #footer  {
+			
+				border-radius: 16px;
+				border-width: 8px;
+		}
+}

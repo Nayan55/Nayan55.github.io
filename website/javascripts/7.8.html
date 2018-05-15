@@ -1,0 +1,85 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Room Service</title>
+</head>
+
+<body>
+<script type="text/javascript">
+	var time = prompt("What time is it?");
+		if( time >= 6  && time <= 10) {
+			alert("IT IS BETWEEN 6AM AND 10AM");
+			alert("There is a delicious continental breakfast going on in the lobby. Enjoy!"); 
+		}
+		else if( time >= 11 && time <= 14 ) {
+			alert("IT IS BETWEEN 11AM AND 2PM");
+			alert("The Restaurant is open");
+			var reservation = confirm("Would you like to make a reservation?");
+			if(reservation == true) {
+				var reservationTime = Math.floor(Math.random() * 6);
+				switch(reservationTime) {
+					case 0: 
+						alert("Your reservation is at 11:00 am");
+						break;
+					case 1:
+						alert("Your reservation is at 11:30 am");
+						break;
+					case 2:
+						alert("Your reservation is at 12:00 pm");
+						break;
+					case 3:
+						alert("Your reservation is at 12:30 pm");
+						break;
+					case 4: 
+						alert("Your reservation is at 13:00 pm");
+						break;
+					case 5:	
+						alert("Your reservation is at 13:30 pm");
+						break;
+				}
+			}
+		}
+			else if(time >= 17 && time <= 21)	 {
+				alert("You can order room service or visit the restaurant");
+				var reserve2 = confirm("Do you want to make a reservation?");
+					if(reserve2 == true) {
+						var reserveTime2 = Math.floor(Math.random() * 9);
+						switch(reserveTime2) {
+							case 0: 
+								alert("Your reservation is at 17:00 pm");
+								break;
+							case 1:
+								alert("Your reservation is at 17:30 pm");
+								break;
+							case 2:
+								alert("Your reservation is at 18:00 pm");
+								break;
+							case 3:
+								alert("Your reservation is at 18:30 pm");
+								break;
+							case 4:
+								alert("Your reservation is at 19:00 pm");
+								break;
+							case 5:
+								alert("Your reservation is at 19:30 pm");
+								break;
+							case 6:
+								alert("Your reservation is at 20:00 pm");
+								break;
+							case 7:
+								alert("Your reservation is at 20:30 pm");
+								break;
+							case 8:
+								alert("Your reservation is at 21:00 pm");
+								break;
+						}
+					}
+				}
+					else{
+						alert("Go get yourself a snack!");
+					}
+
+</script>		
+</body>
+</html>

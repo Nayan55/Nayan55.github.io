@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Google Maps</title>
+</head>
+
+<body>
+<script type="text/javascript">
+	var miles = prompt("How long is your road trip? (in miles)");
+	var speed = prompt("How fast is your car moving? (in miles per hour)");
+	var time = miles / speed;
+	//2.5
+	var hours =Math.floor(time);
+	// 2
+	var minutes = (time - hours) * 60;
+	// .5
+	// 30
+	
+	document.write("You will be there in: " + hours + "hr " + minutes + "min" + "<br>");
+</script>
+</body>
+</html>

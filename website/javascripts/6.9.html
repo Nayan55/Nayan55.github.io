@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Untitled Document</title>
+</head>
+
+<body>
+
+<script type="text/javascript">
+	var weight = prompt("What is your weight in pounds?");
+	var height = prompt("What is your height in inches?");
+	
+	var weightk = weight * 0.453592;
+	var heightm = height * 0.0254;
+	
+	var heightm2 = heightm * heightm;
+	
+	var BMI = weightk / heightm2;
+	
+	alert("Your BMI is: " + BMI + "%");
+	
+	document.write("Your weight in pounds is: " + weight + " lb <br>");
+	document.write("Your height in inches is: " + height + " in<br>");
+	document.write("Your weight in kilograms is: " + weightk + " kg<br>");
+	document.write("Your height in meters is: " + heightm + " m<br>");
+	document.write("Your BMI is: " + BMI + "%");
+	
+	
+</script>
+
+</body>
+</html>
