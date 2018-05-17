@@ -1,0 +1,9 @@
+---
+layout: post
+title:  "Thank you!"
+date:   2018-05-17 13:50:49 -0700
+categories: uncategorized
+author: Mr. Scheuerlein
+---
+
+Thank you for taking my class. I hope you keep learning to code and come back to visit!
